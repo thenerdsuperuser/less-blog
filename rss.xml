@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Your RSS Feed Title</title>
+<description>A brief description of your RSS feed.</description>
+<language>en-us</language>
+<link>http://yourwebsite.com/rss.xml</link>
+<atom:link href="http://yourwebsite.com/rss.xml" rel="self" type="application/rss+xml" />
+
+<!-- LB -->
+
+<item>
+<title>testing</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#testing</guid>
+<pubDate>Tue, 13 Nov 2018 11:37:13 +0530</pubDate>
+<description><![CDATA[
+<h2 id='testing'>testing</h2>
+<small>[<a href=" | tee -a index.html index_test.html#testing">link</a>&mdash;<a href="blog/testing.html">standalone</a>]</small><br>
+<p>
+
+blah blah blah
+<b>bold bold <i>italics</i></b>
+
+</p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>picoCTF2017 task 5 keyz</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#picoctf2017-task-5-keyz</guid>
+<pubDate>Thu, 26 Jul 2018 21:18:32 +0530</pubDate>
+<description><![CDATA[
+<h2 id='picoctf2017-task-5-keyz'>picoCTF2017 task 5 keyz</h2>
+<small>[<a href=" | tee -a index.html index_test.html#picoctf2017-task-5-keyz">link</a>&mdash;<a href="blog/picoctf2017-task-5-keyz.html">standalone</a>]</small><br>
+<p>
+fuck. this was insane. so, i had to create my ssh keys on my local system using <br> 
+<code> ssh-keygen -t rsa -C "normalguyincollege@gmail.com"</code>
+<br>and then open the shell on the ctf website. then navigate to <code>cd ~/.ssh/</code>
+<br>create a file called as <b>authorized keys</b>, add my ssh rsa key there.
+<br>again come to my local machine, and then ssh into the server using <code>ssh thenerdsuperuser@shell2017.picoctf.com</code>
+<br>finally the key was shown: <i>who_needs_pwords_anyways</i>
+</p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>picoCTF2017 task 4</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#picoctf2017-task-4</guid>
+<pubDate>Thu, 26 Jul 2018 20:53:54 +0530</pubDate>
+<description><![CDATA[
+<h2 id='picoctf2017-task-4'>picoCTF2017 task 4</h2>
+<small>[<a href=" | tee -a index.html index_test.html#picoctf2017-task-4">link</a>&mdash;<a href="blog/picoctf2017-task-4.html">standalone</a>]</small><br><p>
+now i had a list of puzzles to solve. i took the cryptography section and took one named as <i>substitution</i>
+<br>it was a simple substitution cipher. the keys were, <b>MIT=THE RTETDZTK=DECEMBER</b>
+<br><a href="https://webshell2017.picoctf.com/static/44e178de57175cfc0e24f69d21e63f59/cipher.txt">here</a> is the link to the file.
+<br>the flag here was, <i>IFONLYMODERNCRYPTOWASLIKETHIS</i>
+</p><br>
+]]></description>
+</item>
+
+
+<item>
+<title>picoCTF2017 task 3</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#picoctf2017-task-3</guid>
+<pubDate>Thu, 26 Jul 2018 20:45:44 +0530</pubDate>
+<description><![CDATA[
+<h2 id='picoctf2017-task-3'>picoCTF2017 task 3</h2>
+<small>[<a href=" | tee -a index.html index_test.html#picoctf2017-task-3">link</a>&mdash;<a href="blog/picoctf2017-task-3.html">standalone</a>]</small><br><br>
+third one was pretty simple. i had a couple of hexadecimal codes and i had to find which one is red(meh).
+<br><a href="https://webshell2017.picoctf.com/static/19de212231cdca44105cf871aabc9746/codes.txt">here</a> is the link.
+<p>the answer is: <i>#C70002</i></p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>picoCTF2017 task 2</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#picoctf2017-task-2</guid>
+<pubDate>Thu, 26 Jul 2018 20:42:05 +0530</pubDate>
+<description><![CDATA[
+<h2 id='picoctf2017-task-2'>picoCTF2017 task 2</h2>
+<small>[<a href=" | tee -a index.html index_test.html#picoctf2017-task-2">link</a>&mdash;<a href="blog/picoctf2017-task-2.html">standalone</a>]</small><br><br>
+the second task is of cryptography. <a href="https://webshell2017.picoctf.com/static/7ae35fc2c5277daab6ca7553c71216c1/message.txt"> this </a>is the link.
+<br>i was supposed to decode a <b>ROT13</b> text.
+<br>the code i used here is:
+<br>
+<br>
+<code>echo "Lb, fb unir lbh orra cynlvat gung arj Zrfbcrgf tnzr? Gubfr arj Zrtnybalpuvqnr naq Oenqlcbqvqnr gurl nqqrq ner cerggl pbby. Npghnyyl, V jbhyq tb nf sne nf fnlvat gung vg vf abj zl yvsr'f qrnerfg nzovgvba gb bognva n "Vasyngnoyr Fybgu Zbafgre"!" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'</code>
+<br>the solution is: 
+<br><i>Yo, so have you been playing that new Mesopets game? Those new Megalonychidae and Bradypodidae they added are pretty cool. Actually, I would go as far as saying that it is now my life's dearest ambition to obtain a Inflatable Sloth Monster!</i>
+<br><br>
+]]></description>
+</item>
+
+
+<item>
+<title>picoCTF2017 task 1</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#picoctf2017-task-1</guid>
+<pubDate>Thu, 26 Jul 2018 20:39:01 +0530</pubDate>
+<description><![CDATA[
+<h2 id='picoctf2017-task-1'>picoCTF2017 task 1</h2>
+<small>[<a href=" | tee -a index.html index_test.html#picoctf2017-task-1">link</a>&mdash;<a href="blog/picoctf2017-task-1.html">standalone</a>]</small><br><br>
+so it started out with me needing to use grep. 
+<br>here it is.
+<a href="https://webshell2017.picoctf.com/static/2757ba64098c033dc7821249099a7297/contractors.txt">this</a> is the link. i was supposed to find the full name, i.e. use grep.
+<br><code>cat contractors.txt | grep "^Robin" | grep "Morris$"</code>
+<br>the answer is: <i>Robin Almay Morris</i>
+<br><br>
+]]></description>
+</item>
+
+
+
+
+
+
+<item>
+<title>i am doing picoctf2017</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#i-am-doing-picoctf2017</guid>
+<pubDate>Thu, 26 Jul 2018 20:28:39 +0530</pubDate>
+<description><![CDATA[
+<h2 id='i-am-doing-picoctf2017'>i am doing picoctf2017</h2>
+<small>[<a href=" | tee -a index.html index_test.html#i-am-doing-picoctf2017">link</a>&mdash;<a href="blog/i-am-doing-picoctf2017.html">standalone</a>]</small>
+<br>
+so i came across this awesome website called as picoCTF. And am currently doing it.
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>resuming blogging</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#resuming-blogging</guid>
+<pubDate>Thu, 26 Jul 2018 20:26:17 +0530</pubDate>
+<description><![CDATA[
+<h2 id='resuming-blogging'>resuming blogging</h2>
+<small>[<a href=" | tee -a index.html index_test.html#resuming-blogging">link</a>&mdash;<a href="blog/resuming-blogging.html">standalone</a>]</small>
+<p>
+haven't been much active. guess i need to now.
+</p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>i am done with editing the script</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#i-am-done-with-editing-the-script</guid>
+<pubDate>Thu, 12 Jul 2018 14:07:46 +0530</pubDate>
+<description><![CDATA[
+<h2 id='i-am-done-with-editing-the-script'>i am done with editing the script</h2>
+<small>[<a href=" | tee -a index.html index_test.html#i-am-done-with-editing-the-script">link</a>&mdash;<a href="blog/i-am-done-with-editing-the-script.html">standalone</a>]</small>
+<p>
+will change the html and css layouts.
+</p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>deleted the case function</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#deleted-the-case-function</guid>
+<pubDate>Thu, 12 Jul 2018 13:56:28 +0530</pubDate>
+<description><![CDATA[
+<h2 id='deleted-the-case-function'>deleted the case function</h2>
+<small>[<a href="| tee -a index.html index_test.html#deleted-the-case-function">link</a>&mdash;<a href="blog/deleted-the-case-function.html">standalone</a>]</small>
+
+<p>
+added a much shorted snippet, using <code>choice</code> command.
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>had forgot function call looooooooool</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#had-forgot-function-call-looooooooool</guid>
+<pubDate>Thu, 12 Jul 2018 13:49:24 +0530</pubDate>
+<description><![CDATA[
+<h2 id='had-forgot-function-call-looooooooool'>had forgot function call looooooooool</h2>
+<small>[<a href="| tee -a index.html index_test.html#had-forgot-function-call-looooooooool">link</a>&mdash;<a href="blog/had-forgot-function-call-looooooooool.html">standalone</a>]</small>
+<p>
+sometimes i am so dumb
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>changed default upload settings</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#changed-default-upload-settings</guid>
+<pubDate>Thu, 12 Jul 2018 13:48:37 +0530</pubDate>
+<description><![CDATA[
+<h2 id='changed-default-upload-settings'>changed default upload settings</h2>
+<small>[<a href="| tee -a index.html index_test.html#changed-default-upload-settings">link</a>&mdash;<a href="blog/changed-default-upload-settings.html">standalone</a>]</small>
+
+<p>
+set default upload as YES!
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>wow, it worked!</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#wow-it-worked</guid>
+<pubDate>Thu, 12 Jul 2018 13:43:29 +0530</pubDate>
+<description><![CDATA[
+<h2 id='wow-it-worked'>wow, it worked!</h2>
+<small>[<a href="| tee -a index.html index_test.html#wow-it-worked">link</a>&mdash;<a href="blog/wow-it-worked.html">standalone</a>]</small>
+
+<p>
+need to implement it in the main script :p
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>updating both files trial 1</title>
+<guid>https://bored-hand.surge.sh/index.html index_test.html#updating-both-files-trial-1</guid>
+<pubDate>Thu, 12 Jul 2018 13:42:12 +0530</pubDate>
+<description><![CDATA[
+<h2 id='updating-both-files-trial-1'>updating both files trial 1</h2>
+<small>[<a href="| tee -a index.html index_test.html#updating-both-files-trial-1">link</a>&mdash;<a href="blog/updating-both-files-trial-1.html">standalone</a>]</small>
+<p>
+looks really weird
+</p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://bored-hand.surge.sh/index.html#</guid>
+<pubDate>Thu, 12 Jul 2018 13:28:34 +0530</pubDate>
+<description><![CDATA[
+
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://bored-hand.surge.sh/index.html#</guid>
+<pubDate>Thu, 12 Jul 2018 13:25:08 +0530</pubDate>
+<description><![CDATA[
+
+]]></description>
+</item>
+
+
+<item>
+<title>some errors lmao</title>
+<guid>https://bored-hand.surge.sh/index.html#some-errors-lmao</guid>
+<pubDate>Thu, 12 Jul 2018 13:24:04 +0530</pubDate>
+<description><![CDATA[
+<h2 id='some-errors-lmao'>some errors lmao</h2>
+<small>[<a href="index.html#some-errors-lmao">link</a>&mdash;<a href="blog/some-errors-lmao.html">standalone</a>]</small>
+
+<p>
+didn't work lol
+</p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://bored-hand.surge.sh/index.html#</guid>
+<pubDate>Thu, 12 Jul 2018 13:22:41 +0530</pubDate>
+<description><![CDATA[
+
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://bored-hand.surge.sh/index.html#</guid>
+<pubDate>Thu, 12 Jul 2018 13:21:48 +0530</pubDate>
+<description><![CDATA[
+
+]]></description>
+</item>
+
+
+<item>
+<title>i will draft it</title>
+<guid>https://bored-hand.surge.sh/index.html#i-will-draft-it</guid>
+<pubDate>Thu, 12 Jul 2018 13:18:40 +0530</pubDate>
+<description><![CDATA[
+<h2 id='i-will-draft-it'>i will draft it</h2>
+<small>[<a href="index.html#i-will-draft-it">link</a>&mdash;<a href="blog/i-will-draft-it.html">standalone</a>]</small>
+<p>
+taking care of boundary cases
+</p>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>let's see if it works</title>
+<guid>https://bored-hand.surge.sh/index.html#lets-see-if-it-works</guid>
+<pubDate>Thu, 12 Jul 2018 12:59:52 +0530</pubDate>
+<description><![CDATA[
+<h2 id='lets-see-if-it-works'>let's see if it works</h2>
+<small>[<a href="index.html#lets-see-if-it-works">link</a>&mdash;<a href="blog/lets-see-if-it-works.html">standalone</a>]</small>
+
+<br>
+hopefully it'll work
+<br>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>idk how</title>
+<guid>https://bored-hand.surge.sh/index.html#idk-how</guid>
+<pubDate>Thu, 12 Jul 2018 12:51:53 +0530</pubDate>
+<description><![CDATA[
+<h2 id='idk-how'>idk how</h2>
+<small>[<a href="index.html#idk-how">link</a>&mdash;<a href="blog/idk-how.html">standalone</a>]</small>
+how do i change the code to select if only 1 file is present
+<br>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>ritik gandu again</title>
+<guid>https://bored-hand.surge.sh/index.html#ritik-gandu-again</guid>
+<pubDate>Tue, 10 Jul 2018 17:12:52 +0530</pubDate>
+<description><![CDATA[
+<h2 id='ritik-gandu-again'>ritik gandu again</h2>
+<small>[<a href="index.html#ritik-gandu-again">link</a>&mdash;<a href="blog/ritik-gandu-again.html">standalone</a>]</small>
+
+haan wo gandu hai 
+<br>
+]]></description>
+</item>
+
+
+
+
+<item>
+<title>let me check this edit</title>
+<guid>https://bored-hand.surge.sh/index.html#let-me-check-this-edit</guid>
+<pubDate>Mon, 18 Jun 2018 21:05:35 +0530</pubDate>
+<description><![CDATA[
+<h2 id='let-me-check-this-edit'>let me check this edit</h2>
+<small>[<a href="index.html#let-me-check-this-edit">link</a>&mdash;<a href="blog/let-me-check-this-edit.html">standalone</a>]</small>
+
+hi there. i deleted the ++
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>let me analyze it</title>
+<guid>https://bored-hand.surge.sh/index.html#let-me-analyze-it</guid>
+<pubDate>Mon, 18 Jun 2018 21:03:09 +0530</pubDate>
+<description><![CDATA[
+<h2 id='let-me-analyze-it'>let me analyze it</h2>
+<small>[<a href="index.html#let-me-analyze-it">link</a>&mdash;<a href="blog/let-me-analyze-it.html">standalone</a>]</small>
+
+okay so i understood this part
+<++>
+]]></description>
+</item>
+
+
+<item>
+<title>time stam is weird</title>
+<guid>https://bored-hand.surge.sh/index.html#time-stam-is-weird</guid>
+<pubDate>Mon, 18 Jun 2018 20:52:39 +0530</pubDate>
+<description><![CDATA[
+<h2 id='time-stam-is-weird'>time stam is weird</h2>
+<small>[<a href="index.html#time-stam-is-weird">link</a>&mdash;<a href="blog/time-stam-is-weird.html">standalone</a>]</small>
+
+<p>
+let me not delete the ++
+</p>
+<++>
+]]></description>
+</item>
+
+
+<item>
+<title>let's make this website cool</title>
+<guid>https://bored-hand.surge.sh/index.html#lets-make-this-website-cool</guid>
+<pubDate>Mon, 18 Jun 2018 20:51:25 +0530</pubDate>
+<description><![CDATA[
+<h2 id='lets-make-this-website-cool'>let's make this website cool</h2>
+<small>[<a href="index.html#lets-make-this-website-cool">link</a>&mdash;<a href="blog/lets-make-this-website-cool.html">standalone</a>]</small>
+
+so i am creating a new layout.
+i guess first i will edit the lb script.
+]]></description>
+</item>
+
+
+<item>
+<title>hmmmmmmm</title>
+<guid>https://bored-hand.surge.sh/index.html#hmmmmmmm</guid>
+<pubDate>Sat, 16 Jun 2018 21:07:52 +0530</pubDate>
+<description><![CDATA[
+<h2 id='hmmmmmmm'>hmmmmmmm</h2>
+<small>[<a href="index.html#hmmmmmmm">link</a>&mdash;<a href="blog/hmmmmmmm.html">standalone</a>]</small>
+
+<p>
+so yeah it did work but it started uploading the previous posts :p
+</p>
+]]></description>
+</item>
+
+
+<item>
+<title>it should work now</title>
+<guid>https://bored-hand.surge.sh/index.html#it-should-work-now</guid>
+<pubDate>Sat, 16 Jun 2018 21:06:44 +0530</pubDate>
+<description><![CDATA[
+<h2 id='it-should-work-now'>it should work now</h2>
+<small>[<a href="index.html#it-should-work-now">link</a>&mdash;<a href="blog/it-should-work-now.html">standalone</a>]</small>
+
+<p>
+i should install autocomplete, <i>youCompleteMe</i> for vim.
+]]></description>
+</item>
+
+
+<item>
+<title>lmao</title>
+<guid>https://bored-hand.surge.sh/index.html#lmao</guid>
+<pubDate>Sat, 16 Jun 2018 21:06:35 +0530</pubDate>
+<description><![CDATA[
+<h2 id='lmao'>lmao</h2>
+<small>[<a href="index.html#lmao">link</a>&mdash;<a href="blog/lmao.html">standalone</a>]</small>
+
+<p>
+i forgot to put it inside the brackets :p
+]]></description>
+</item>
+
+
+<item>
+<title>i am adding some extra code to remove one or more stuff</title>
+<guid>https://bored-hand.surge.sh/index.html#i-am-adding-some-extra-code-to-remove-one-or-more-stuff</guid>
+<pubDate>Sat, 16 Jun 2018 21:06:13 +0530</pubDate>
+<description><![CDATA[
+<h2 id='i-am-adding-some-extra-code-to-remove-one-or-more-stuff'>i am adding some extra code to remove one or more stuff</h2>
+<small>[<a href="index.html#i-am-adding-some-extra-code-to-remove-one-or-more-stuff">link</a>&mdash;<a href="blog/i-am-adding-some-extra-code-to-remove-one-or-more-stuff.html">standalone</a>]</small>
+
+<p>
+  I will add the finalize in the new function, so for that i am adding a case statement of accepting yes or no
+</p>
+]]></description>
+</item>
+
+
+<item>
+<title>finally i started working :p</title>
+<guid>https://bored-hand.surge.sh/index.html#finally-i-started-working-p</guid>
+<pubDate>Fri, 15 Jun 2018 21:27:03 +0530</pubDate>
+<description><![CDATA[
+<h2 id='finally-i-started-working-p'>finally i started working :p</h2>
+<small>[<a href="index.html#finally-i-started-working-p">link</a>&mdash;<a href="blog/finally-i-started-working-p.html">standalone</a>]</small>
+
+<p>
+yeah son i startedd working finally. 
+<br>
+it's telling some 'descriptive information' so that we understand :p
+</p>
+
+<p>
+let's blog in the meantime :p
+</p>
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://bored-hand.surge.sh/index.html#</guid>
+<pubDate>Wed, 13 Jun 2018 23:34:52 +0530</pubDate>
+<description><![CDATA[
+
+]]></description>
+</item>
+
+
+<item>
+<title>i need to change the layout and modify it</title>
+<guid>https://bored-hand.surge.sh/index.html#i-need-to-change-the-layout-and-modify-it</guid>
+<pubDate>Wed, 13 Jun 2018 23:32:07 +0530</pubDate>
+<description><![CDATA[
+<h2 id='i-need-to-change-the-layout-and-modify-it'>i need to change the layout and modify it</h2>
+<small>[<a href="index.html#i-need-to-change-the-layout-and-modify-it">link</a>&mdash;<a href="blog/i-need-to-change-the-layout-and-modify-it.html">standalone</a>]</small>
+
+<p>
+i will see for new designs and add it in this.
+</p>
+]]></description>
+</item>
+
+
+<item>
+<title>this should work properly</title>
+<guid>https://bored-hand.surge.sh/index.html#this-should-work-properly</guid>
+<pubDate>Wed, 13 Jun 2018 22:01:06 +0530</pubDate>
+<description><![CDATA[
+<h2 id='this-should-work-properly'>this should work properly</h2>
+<small>[<a href="index.html#this-should-work-properly">link</a>&mdash;<a href="blog/this-should-work-properly.html">standalone</a>]</small>
+
+<p>
+so, i added a function to surge the files. argh. i need to add a copy function. will use the update.sh script i made this evening.
+</p>
+
+<p>
+fuck again i need to do it. okay cya.
+</p>
+
+<++>
+]]></description>
+</item>
+
+
+<item>
+<title>i'll first manually copy and see the surge function lol</title>
+<guid>https://bored-hand.surge.sh/index.html#ill-first-manually-copy-and-see-the-surge-function-lol</guid>
+<pubDate>Wed, 13 Jun 2018 22:01:03 +0530</pubDate>
+<description><![CDATA[
+<h2 id='ill-first-manually-copy-and-see-the-surge-function-lol'>i'll first manually copy and see the surge function lol</h2>
+<small>[<a href="index.html#ill-first-manually-copy-and-see-the-surge-function-lol">link</a>&mdash;<a href="blog/ill-first-manually-copy-and-see-the-surge-function-lol.html">standalone</a>]</small>
+
+<p>
+heading is the body lmao xD
+</p>
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://bored-hand.surge.sh/index.html#</guid>
+<pubDate>Wed, 13 Jun 2018 22:00:53 +0530</pubDate>
+<description><![CDATA[
+
+]]></description>
+</item>
+
+
+<item>
+<title>as it looks like</title>
+<guid>https://bored-hand.surge.sh/index.html#as-it-looks-like</guid>
+<pubDate>Wed, 13 Jun 2018 21:39:45 +0530</pubDate>
+<description><![CDATA[
+<h2 id='as-it-looks-like'>as it looks like</h2>
+<small>[<a href="index.html#as-it-looks-like">link</a>&mdash;<a href="blog/as-it-looks-like.html">standalone</a>]</small>
+<p>
+finally it is working. lol, i hadn't assigned the value to $EDITOR :P
+</p>
+<++>
+]]></description>
+</item>
+
+
+<item>
+<title>This is what a post looks like</title>
+<guid>https://lukesmith.xyz/index.html#this-is-what-a-post-looks-like</guid>
+<pubDate>Wed, 16 May 2018 14:38:38 -0700</pubDate>
+<description><![CDATA[
+<h2 id='this-is-what-a-post-looks-like'>This is what a post looks like</h2><small>[<a aria-hidden="true" href="2018.html#this-is-what-a-post-looks-like">link</a>&mdash;<a href="blog/this-is-what-a-post-looks-like.html">standalone</a>]</small>
+
+<p>This is autogenerated by the blog. As you can see, an equivalent RSS feed entry and standalone blog post is generated after you finalize the post.</p>
+]]></description>
+</item>
+
+
+</channel>
+</rss>
+
